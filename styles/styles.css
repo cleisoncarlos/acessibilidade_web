@@ -1,0 +1,166 @@
+/* body {
+    background-color: #5d5d5d;
+} */
+
+.collapse-container {
+    width: fit-content;
+    /* border: 1px solid #007bff; */
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: fixed;
+    top: 250px;
+    z-index: 999999999;
+    /* display: none; */
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.collapse-content {
+    padding: 1px;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 5px;
+    z-index: 9998;
+}
+
+
+
+.bt-collapse {
+    border: #a4a4a4 solid 1px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+}
+
+.collapse-button {
+    left: 20px;
+    top: 200px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: fixed;
+
+}
+
+.collapsed {
+    height: 0;
+    width: 0;
+}
+
+/* monocromatico */
+.monochrome {
+    filter: grayscale(100%);
+}
+
+/* regua de dislexia */
+
+
+
+
+body, html {
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+    border: 0;
+    vertical-align: baseline;
+}
+
+main {
+    max-width: 900px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+/* Estilos para a regua de leitura */
+.fundo-escuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    /* Fundo escurecido */
+    z-index: 9997;
+    /* Z-index menor que a regua de leitura para ficar abaixo */
+    display: none;
+    /* Inicia oculto */
+}
+
+.regua {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Largura da regua de leitura */
+    height: 100px;
+    background-color: transparent;
+    /* Cor de fundo transparente */
+    z-index: 9999;
+    /* Garante que a regua fique sempre no topo */
+    display: none;
+    /* Inicia oculta */
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.4);
+    /* Cria uma sombra grande o suficiente para cobrir a página */
+}
+
+
+
+#followDiv {
+    width: 100%;
+    height: 2px;
+    background: rgb(0, 255, 17);   
+    position: absolute;
+    pointer-events: none;
+    display: none; /* Começa oculta */
+}
+
+
+
+.div-acompanha-mouse {
+    position: fixed;
+    width: 40%;
+    height: 2px;
+    background-color: #16f050;
+    color: #fff;
+    text-align: center;
+    pointer-events: none;
+    /* Para garantir que a div não capture eventos do mouse */
+    display: none;
+    /* Inicia oculta */
+    margin-top: 60px;
+}
+
+
+
+@font-face {
+    font-family: Dyslexic;
+    src: url(../font/OpenDyslexicAlta-Regular.otf)
+}
+
+body.fonte-dislexia {
+    font-family: Dyslexic;
+    line-height: 2em;
+    font-weight: lighter;
+
+
+}
+
+
